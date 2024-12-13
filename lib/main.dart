@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Menu Demo',
       initialRoute: '/',
       routes: {
-        '/': (context) => HomeScreen(),
+        '/': (context) => const HomeScreen(),
         '/menu': (context) => const MenuScreen(),
         '/map': (context) => const EmbeddedMap(),
         '/profile': (context) => const ProfileScreen(),
